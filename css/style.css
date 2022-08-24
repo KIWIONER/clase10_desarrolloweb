@@ -113,7 +113,9 @@ footer{display: grid;
 grid-template-areas: 
 "quicklinks suscribete sigueme logo"
 "quicklinks  faq metodoPago logo";
-grid-template-rows: auto auto auto auto;grid-template-columns: 15% 25% 25% 15%;grid-row-gap: 0px;grid-column-gap: 50px;}
+grid-template-rows: auto auto auto auto;
+grid-template-columns: 15% 25% 25% 15%;
+grid-row-gap: 0px;grid-column-gap: 0px;}
 .border{border: solid 4px black}
 .quicklinks{grid-area: quicklinks;}
 .suscribete{grid-area: suscribete;}
@@ -746,7 +748,7 @@ header{display: flex; flex-direction: column;}
 	"footer";
 	grid-template-columns: 100%;
 	grid-template-rows: repeat(2,auto);
-	grid-row-gap: 5px;}
+	}
 
 .txtContacto{display: none;}
 /*-------------------------------------------------------------------------*/
