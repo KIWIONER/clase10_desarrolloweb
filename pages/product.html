@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Producto-Fiebrevintage</title>
 		<link rel="shorcut icon" href="../assets/imagenes/logodemarca.png">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="../css/style.css"/>
 	</head>
 	<body>
@@ -38,7 +39,7 @@
    				<h2> Compra con facilidad</h2>
    			</div>
    			<div class="cuadroGeneral">
-   				<div class="imgGeneral">
+   				<div data-aos="zoom-in" class="imgGeneral">
    					<img src="../assets/imagenes/camisa-abercombi.jpg" alt="camisa-abercombi" width="900" height="1200">
    				</div>
    				<div class="subImg1">
@@ -103,7 +104,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="cuadroSubtipoTabla">
+			<div data-aos="zoom-in" class="cuadroSubtipoTabla">
 				<h2>GUÍA DE TALLAS</h2>
 				<table  border="2" cellpadding="14" cellspacing="3">
 					<tr>
@@ -133,8 +134,9 @@
 				</table>
 			</div>
 			<div class="txtDetallesProducto">
-				<div>
-					<h2>Detalles del producto</h2>
+				<div data-aos="fade-up"
+     data-aos-duration="3000">
+					<h2 >Detalles del producto</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -144,7 +146,8 @@
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
 				</div>
-				<div>
+				<div data-aos="fade-up"
+     data-aos-duration="3000">
 					<h2>Beneficios clave</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -155,7 +158,8 @@
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
 				</div>
-				<div>
+				<div data-aos="fade-up"
+     data-aos-duration="3000">
 					<h2>Material del producto</h2>
 					<ul>
 						<li>50% Algodón</li>
@@ -166,7 +170,8 @@
 			</div>
 			<div class="comentariosProducto">
 				<h2>REVIEWS</h2>
-				<div>
+				<div data-aos="fade-up"
+     data-aos-duration="3000">
 					<h3>Username 1111</h3>
 					<img src="../assets/imagenes/star.png" width="15" height="15">
 					<img src="../assets/imagenes/star.png" width="15" height="15">
@@ -180,7 +185,8 @@
 						consequat.
 					</p>
 				</div>
-				<div>
+				<div data-aos="fade-up"
+     data-aos-duration="3000">
 					<h3>Username 2222</h3>
 					<img src="../assets/imagenes/star.png" width="15" height="15">
 					<img src="../assets/imagenes/star.png" width="15" height="15">
@@ -194,7 +200,8 @@
 						consequat.
 					</p>
 				</div>
-				<div>
+				<div data-aos="fade-up"
+     data-aos-duration="3000">
 					<h3>Username 3333</h3>
 					<img src="../assets/imagenes/star.png" width="15" height="15">
 					<img src="../assets/imagenes/star.png" width="15" height="15">
@@ -247,17 +254,17 @@
 			<div class="tambien">
 				<h3>TAMBIÉN TE PUEDE INTERESAR</h3>
 				<div class="img1">
-					<img src="../assets/imagenes/camisa-abercombi.jpg" alt="camisa-abercombi" width="300" height="400"><span>Camisa Abercombi</span>
+					<img data-aos="fade-up" src="../assets/imagenes/camisa-abercombi.jpg" alt="camisa-abercombi" width="300" height="400"><span>Camisa Abercombi</span>
 					<p><b>€35.00</b></p>
 					<button>Agregar al carrito</button>
 				</div>
 				<div class="img2">
-					<img  src="../assets/imagenes/camisa-alpha-veta.jpg" alt="camisa-alpha-veta" width="300" height="400"><span>Camisa Veta</span>
+					<img  data-aos="fade-up" src="../assets/imagenes/camisa-alpha-veta.jpg" alt="camisa-alpha-veta" width="300" height="400"><span>Camisa Veta</span>
 					<p><b>€35.00</b></p>
 					<button>Agregar al carrito</button>
 				</div>
 				<div class="img3">	
-					<img src="../assets/imagenes/camisa-amarilla-cob-damingo.jpg" alt="camisa-alpha-veta" width="300" height="400"><span>Camisa  Dámingo</span>
+					<img data-aos="fade-up" src="../assets/imagenes/camisa-amarilla-cob-damingo.jpg" alt="camisa-alpha-veta" width="300" height="400"><span>Camisa  Dámingo</span>
 					<p><b>€ 35.00</b></p>
 					<button>Agregar al carrito</button>
 				</div>
@@ -306,5 +313,9 @@
 				</div>
 			</footer>
 		</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 	</body>
 </html>

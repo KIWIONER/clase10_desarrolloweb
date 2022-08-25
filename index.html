@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>INICIO-Fiebrevintage</title>
 		<link rel="shorcut icon" href="assets/imagenes/logodemarca.png">
-		<link rel="stylesheet" href="css/style.css"/>
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css"/>
+		<title>INICIO-Fiebrevintage</title>
 	</head>
 <body>
 	<div class="gridIndex">
@@ -57,7 +57,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="txtAbrigos">
+		<div  data-aos="fade-right"class="txtAbrigos">
 			<h2>Bienvenidos a nuestra página</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -77,11 +77,11 @@
 			<p>¡Se viene lo bueno, nuestra marca de gafas de sol KIWI, puro estilo para el cuerpo!</p>
 		</div>
 		<div class="imgAbrigos">
-			<a href="pages/tienda.html"><img src="assets/imagenes/portada1.jpg"></a>
+			<a href="pages/tienda.html"><img data-aos="fade-left" src="assets/imagenes/portada1.jpg"></a>
 			<h3>Conoce lo último para este invierno</h3>
 			<button><a href="pages/tienda.html">Ver más</a></button>
 		</div>
-		<div class="txtCamisas">
+		<div data-aos="fade-left"class="txtCamisas">
 			<h2>Bienvenidos a nuestra página</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -93,11 +93,11 @@
 			</p>
 		</div>
 		<div class="imgCamisas">
-			<a href="pages/tienda.html"><img src="assets/imagenes/portada2.jpg" alt="camisas vintage"></a>
+			<a href="pages/tienda.html"><img data-aos="fade-right" src="assets/imagenes/portada2.jpg" alt="camisas vintage"></a>
 			<h3>Las camisas y estilo para hombre</h3>
 			<button><a href="pages/tienda.html">Ver más</a></button>
 		</div>
-		<div class="txtChaquetas">
+		<div data-aos="fade-right" class="txtChaquetas">
 			<h2>Bienvenidos a nuestra página</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -109,16 +109,16 @@
 			</p>
 		</div>
 		<div class="imgChaquetas">
-			<a href="pages/tienda.html"><img src="assets/imagenes/portada3.jpg"></a>
+			<a href="pages/tienda.html"><img data-aos="fade-left" src="assets/imagenes/portada3.jpg"></a>
 			<h3>Encuentra las chaquetas más fashion</h3>
 			<button><a href="pages/tienda.html">Ver más</a></button>
 		</div>
 		<div class="imgConocenos">
 			<a href="pages/nosotros.html">
-				<img src="assets/imagenes/portadatienda.jpg">
+				<img data-aos="fade-right" src="assets/imagenes/portadatienda.jpg">
 			</a>
 		</div>
-		<div class="txtConocenos">	
+		<div data-aos="fade-left" class="txtConocenos">	
 			<h2>Conoce al equipo que hace posible nuestra idea</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -172,6 +172,9 @@
 			</div>
 		</footer>
 	</div>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

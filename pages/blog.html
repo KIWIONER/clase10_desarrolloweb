@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>BLOG-Fiebrevintage</title>
 		<link rel="shorcut icon" href="../assets/imagenes/logodemarca.png">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="../css/style.css"/>
 	</head>
 	<body>
@@ -35,13 +36,13 @@
 			</header>
 			<div class="imgPrincipalTitulo">
 				<img src="../assets/imagenes/imagendebienvenida.jpg" alt="Conocenos">
-				<div class="tituloPrincipal">
+				<div data-aos="flip-right" class="tituloPrincipal">
 	 				<h1>BLOG.VINTAGE</h1>
 	   				<h2>Sigue todas las novedades de la moda vintage </h2>
 	   			</div>
 	   		</div>
    			<div class="txtBlog1">
-   				<img src="../assets/imagenes/motivos-comprar-vintage.jpg"></a>
+   				<img data-aos="fade-up" src="../assets/imagenes/motivos-comprar-vintage.jpg"></a>
    				<h2>titulo del artículo</h2>
    				<h3>Pequeña descripción del contenido del blog</h3>
    				<p>
@@ -52,7 +53,7 @@
    				<a href="https://www.fiebrevintage.com/blogs/noticias/ventajas-comprar-vintage" target="_blank"><button>Leer más</button></a>
    			</div>
      		<div class="txtBlog2">
-   				<img src="../assets/imagenes/que-es-modavintage.jpg"></a>
+   				<img data-aos="fade-up" src="../assets/imagenes/que-es-modavintage.jpg"></a>
    				<h2>titulo del artículo</h2>
    				<h3>Pequeña descripción del contenido del blog</h3>
    				<p>
@@ -63,7 +64,7 @@
    				<a href="https://www.fiebrevintage.com/blogs/noticias/que-es-la-moda-vintage" target="_blank"><button>Leer más</button></a>
    			</div>
    			<div class="txtBlog3">
-   				<img src="../assets/imagenes/videofastfashion.jpg">
+   				<img data-aos="fade-up" src="../assets/imagenes/videofastfashion.jpg">
    				<h2>titulo del artículo</h2>
    				<h3>Pequeña descripción del contenido del blog</h3>
    				<p>
@@ -74,7 +75,7 @@
    				<a href="https://www.youtube.com/embed/bBu4B9YjsRg" target="_blank"><button>Leer más</button></a>
    			</div>
    			<div class="txtBlog4">
-   				<img src="../assets/imagenes/veranovintage.png">
+   				<img data-aos="fade-up" src="../assets/imagenes/veranovintage.png">
    				<h2>titulo del artículo</h2>
    				<h3>Pequeña descripción del contenido del blog</h3>
    				<p>
@@ -161,10 +162,18 @@
 			</div>
 			<div class="RevistasReseñas">
 				<h2>Revistas recomendadas</h2>
-				<a href="https://telasdivinas.com/revistas-de-moda-vintage" target="_blank"><img src="../assets/imagenes/telasdivinas.jpg" alt="telas-divinas"width="200" height="100">	</a>
-				<a href="https://www.elle.com/es/moda/a35006697/moda-vintage-mujer/" target="_blank"><img src="../assets/imagenes/elle.png" alt="revistaelle"width="200" height="100"></a>
-				<a href="https://www.lolitamoda.com/blog/90-como-es-la-ropa-vintage-razones-para-comprar-y-vestirte-con-ese-estilo" target="_blank"><img src="../assets/imagenes/lolita-multimarca.svg" alt="" width="200" height="100"></a>
-				<a href="https://fashionunited.es/noticias/moda/3-marcas-de-moda-vintage-de-mujer-que-no-te-puedes-perder/2022042238457" target="_blank"><img src="../assets/imagenes/fashion-united.png" alt="" width="200" height="100"></a>
+				<a href="https://telasdivinas.com/revistas-de-moda-vintage" target="_blank">
+					<img data-aos="flip-right" src="../assets/imagenes/telasdivinas.jpg" alt="telas-divinas"width="200" height="100">	
+				</a>
+				<a href="https://www.elle.com/es/moda/a35006697/moda-vintage-mujer/" target="_blank">
+					<img data-aos="flip-left" src="../assets/imagenes/elle.png" alt="revistaelle"width="200" height="100">
+				</a>
+				<a href="https://www.lolitamoda.com/blog/90-como-es-la-ropa-vintage-razones-para-comprar-y-vestirte-con-ese-estilo" target="_blank">
+					<img data-aos="flip-right" src="../assets/imagenes/lolita-multimarca.svg" alt="" width="200" height="100">
+				</a>
+				<a href="https://fashionunited.es/noticias/moda/3-marcas-de-moda-vintage-de-mujer-que-no-te-puedes-perder/2022042238457" target="_blank">
+					<img data-aos="flip-left" src="../assets/imagenes/fashion-united.png" alt="" width="200" height="100">
+				</a>
   			</div>
   			</div>
 			<footer>
@@ -211,5 +220,9 @@
 				</div>
 			</footer>
 		</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 	</body>
 </html>
