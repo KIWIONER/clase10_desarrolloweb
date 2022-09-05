@@ -1,787 +1,274 @@
-/*SELECTORA DE ETIQUETA*/
-*{margin: 0px; padding: 0px;}
-
-/*--------------------------------------------------INDEX.HTML-------------------------------------------------------*/
-
-/*---------CSS>> para texto envio gratis-----------------------------*/
-.txtEnviosGratis{display:flex;flex-direction:row;justify-content:center;background-color:black;color: yellow;
- font-size: 20px;text-align: center;}
-.txtEnviosGratis p{ display: flex;flex-direction: column; justify-items: center; }
-
-/*-------------CSS para HEADER-------------------------------------*/
-
-header{display:flex;flex-direction:row; flex-wrap: wrap; background:linear-gradient( orange, orangered);
- align-items: space-evenly; padding: 2%;justify-items: center;border-bottom: solid 15px black;}
-.carrito--user{display: flex;flex-direction: row; justify-content: center;}
-.carrito--user img{height: 2rem;margin-left: 20px;}
-.logo{display: flex; flex-direction: row; justify-content: center;}
-/*--------ANIMACION LOGO---------*/
-@keyframes change{
-	0% {transform: translatey(-10px);}
-	100% {transform: translatey(10px);}
-}
-.logo{animation: change 1.5s infinite alternate;}
-}
-/*/-----------CSS para HEADER>>NAV---------------------------------*/	
-.myNav {display: flex; flex-direction:row; text-align: center; justify-content: center;}
-.myNav ul{display: flex;flex-direction: row;grid-gap:30px; font-size: 20px;list-style-type:none; }
-.myNav a{display: flex;flex-direction: row;list-style-type: none;text-decoration: none;color: white;} 
-.myNav li a:hover{color: black;border-bottom: solid 4px blueviolet;background-color: none;}
-/*--------------CSS>> .IMGPRINCIPAL+TITULOS H1+H2------------------*/
-.imgPrincipalTitulo {display: flex;flex-direction: column;justify-content: center; margin-bottom: 15px;width:100%;}
-.tituloPrincipal{display:flex;flex-direction:column; align-items:center; align-self:center;text-align: center;
-	border:double 7px bisque; border-radius:40px; background-color: black; color: bisque;font-size: 30px;}
-@keyframes tituloprincipal{
-	0% {transform: translateX(0px);}
-	100%{transform: translateX(200px);}
-}
-.tituloPrincipal{animation: initial 1s;}
-
-
-.tituloPrincipal h2{color: bisque;	text-align: center;	font-size: 30px;}
-/*------------CSS>> .TXTPRINCIPALTITULO H"+H· ---------------------*/	
-.txtPrincipalTitulo {display: flex;flex-direction:column; font-size:30px; align-items:center; justify-self: center; justify-content: center;}
-.txtPrincipalTitulo h2{text-align: center;font-size: 30px;border: double 3px bisque; padding: 10px;
-	background-color: black;border-radius: 25px;color: bisque; margin-bottom: 50px;}
-.txtPrincipalTitulo p{ text-align: center;font-size: 20px;border: double 5px bisque;border-radius: 20px; padding: 20px;}
-/*------------CSS>> txt/img-Abrigos--------------------------------*/
-.txtAbrigos{display: flex;flex-direction: column;align-items: center;
-	justify-self: center; justify-content: center;}
-.txtAbrigos h2{text-align: center;font-size: 30px;border: double 3px bisque; padding: 10px;
-	background-color: black;border-radius: 25px;color: bisque; margin-bottom: 50px;}
-.txtAbrigos p{text-align: center;font-size: 20px;border: double 5px bisque;border-radius: 20px; padding: 20px;}
-.imgAbrigos{display: flex;flex-direction: column;align-items:center; align-content: space-evenly; padding: 20px;}
-.imgAbrigos img { width:100%;border-radius: 30px;}
-.imgAbrigos h3{font-size: 30px;}
-.imgAbrigos button { border: double 5px bisque; width: 100px; height: 40px; background-color: black; border-radius: 15px;}
-.imgAbrigos a {text-decoration:none; color:bisque; font-size: 15px;}
-/*------------------------------------------------------*/
-
-
-.bannerGafas {display: flex;flex-direction: column; align-items: center;}
-.bannerGafas img{display: flex; width: 100%;}
-.bannerGafas h2{font-size: 40px;margin: 20px}
-.bannerGafas p{ font-size: 20px;margin: 20px; }
-
-/*-------------CSS>> txt/img-Camisas-------------------------------*/
-.imgCamisas{display:flex; flex-direction:column; align-items: center; align-content: space-evenly; padding: 20px;}
-.imgCamisas img{ width: 100%;border-radius: 30px;}
-.imgCamisas h3{font-size: 20px;}
-.imgCamisas button{border: double 5px bisque; width: 100px; height: 40px; background-color: black; border-radius: 15px;}
-.imgCamisas a {text-decoration:none; color:bisque; font-size: 15px;}
-.txtCamisas{display: flex;flex-direction: column;align-items: center;justify-self: center; justify-content: center;}
-.txtCamisas h2{text-align: center;font-size: 30px;border: double 3px bisque; padding: 10px;
-	background-color: black;border-radius: 25px;color: bisque; margin-bottom: 50px;}
-.txtCamisas p{text-align: center;font-size: 20px;border: double 5px bisque;border-radius: 20px; padding: 20px;}
-/*-------------CSS>>txt/img-Chaquetas----------------------------*/
-.txtChaquetas{display:flex;flex-direction:column; align-items:center;justify-self:center; justify-content:center;}
-.txtChaquetas h2{ text-align:center; font-size:30px; border:double 3px bisque; padding:10px; background-color: black;
-	border-radius:25px; color:bisque; margin-bottom: 50px;}
-.txtChaquetas p{text-align: center;font-size: 20px;border: double 5px bisque;border-radius: 20px; padding: 20px;}
-.imgChaquetas{ display:flex; flex-direction:column; align-items: center; align-content: space-evenly; padding: 20px;}
-.imgChaquetas img{ width: 100%;border-radius: 30px;}
-.imgChaquetas h3{font-size:20px;}
-.imgChaquetas button{border: double 5px bisque; width: 100px; height: 40px; background-color: black; border-radius: 15px;color: bisque;}
-.imgChaquetas a {text-decoration: none; color:bisque; font-size: 15px;}
-/*-------------CSS>>imgConocenos---------------------------------*/
-.imgConocenos{ display:flex; flex-direction:column; align-items:center; margin-right: 15px;}
-.imgConocenos img{width: 75%;border-radius: 15px;}
-/*-------------CSS>>txtConocenos---------------------------------*/
-.txtConocenos{display: flex; flex-direction: column;align-items: center; justify-self: center; justify-content: center;}
-.txtConocenos h2{ text-align:center; font-size:30px; border:double 3px bisque; padding:10px; background-color: black;
-	border-radius:25px; color:bisque; margin-bottom: 50px;}
-.txtConocenos p{text-align: center;font-size: 20px;border: double 5px bisque;border-radius: 20px; padding: 10px;}
-.txtConocenos button{border: double 5px bisque; width: 100px; height: 40px; background-color: black; border-radius: 15px;
-	color: bisque; margin-top: 15px;}
-.txtConocenos a {text-decoration: none; color:bisque; font-size: 15px;}
-
-/*-------------GRID + CSS>>footer---------------------------------------*/
-
-footer {display:flex; flex-direction: row; justify-content:space-around; align-items: center ;
-	background-image:linear-gradient(orange, orangered);
- padding: 2%; border-top: solid 15px black;}
-footer h3 {font-size: 20px;}
-footer li{ list-style-type: none;font-size: 20px;}
-footer a {text-decoration: none; color: black;}
-footer a:hover{color: white;}
-
-.quicklinks{display:flex; flex-direction: column;}
-
-.suscribete h3{text-align: center;}
-.suscribete form {display:flex;flex-direction:row;justify-content: center; align-items: center;}
-.suscribete img{ display: flex;width:10%; margin-right: 10px;}
-#inputemail{display: flex;flex-direction:row; width:80%; padding: 1%;}
-#inputbutton{ display: flex;flex-direction:row; width:30%; padding: 1%; justify-content: center; background-color: black;color: white;border: none;
-	font-size: 20px;margin-left: 10px;}
-
-.faq{text-align: center;}
-
-.sigueme{text-align: center;}
-.sigueme h3{margin-bottom:2%}
-.sigueme img{ width:15%;height:15%;}
-
-.metodoPago{text-align: center;margin-bottom: 1%;}
-.metodoPago h3{margin-bottom: 2%;}
-.metodoPago img{width:8%;height: 8%;}
-
-.logo img{width: 100%;}
-
-footer{display: grid;
-grid-template-areas: 
-"quicklinks suscribete sigueme logo"
-"quicklinks  faq metodoPago logo";
-grid-template-rows: auto auto auto auto;
-grid-template-columns: 15% 25% 25% 15%;
-grid-row-gap: 0px;grid-column-gap: 0px;}
-.border{border: solid 4px black}
-.quicklinks{grid-area: quicklinks;}
-.suscribete{grid-area: suscribete;}
-.faq{grid-area: faq;}
-.sigueme{grid-area: sigueme;}
-.metodoPago{grid-area: metodoPago;}
-.logo{grid-area: logo;}
-
-/*-----------------------------------------------------CSS+GRID nuestroqueipo-NOSOTROS.HTML-----------------------------------------------------------*/
-
-.txtPrincipalTitulo{display: flex;flex-direction: column;margin: 2%;}
-.txtPrincipalTitulo h3{text-align: center;font-size: 30px;border: double 3px bisque; padding: 1%;
-	background-color: black;border-radius:25px; color: bisque;margin-bottom: 1%;}
-
-.imgLetreroVintage { margin: 1%;justify-items: center;margin: 2%;}
-.imgLetreroVintage img{ width: 100%;border-radius: 10px;}
-
-.txtLetreroVintage {display: flex; flex-direction: column; text-align: center; font-size: 20px; justify-content: center;margin: 2%;}
-.txtLetreroVintage h3 {text-align: center;font-size: 30px;border: double 3px bisque; padding:1%;
-	background-color: black;border-radius: 25px;color: bisque;margin-bottom: 1%;}
-.txtLetreroVintage p{border: double 5px bisque;padding: 1%;border-radius: 15px;}
-
-.imgNuestraTienda{ margin:1%; justify-items: center;margin: 2%;}
-.imgNuestraTienda img {width: 100%;border-radius: 10px;}
-
-.txtNuestraTienda {display: flex; flex-direction: column; text-align: center; font-size: 20px; justify-content: center;margin: 2%;}
-.txtNuestraTienda h3{text-align: center;font-size: 30px;border: double 3px bisque; padding:1%;
-	background-color: black;border-radius: 25px;color: bisque;margin-bottom: 1%;}
-.txtNuestraTienda p{border: double 5px bisque;padding: 1%; border-radius: 15px;}
-
-.txtNuestroEquipo {display:flex; flex-direction: column; text-align: center; font-size: 20px; justify-content: center;margin: 2%;}
-.txtNuestroEquipo h2 {text-align: center;font-size: 30px;border: double 3px bisque; padding:1%;
-	background-color: black;border-radius: 25px;color: bisque;margin-bottom: 1%;justify-self: center;}
-.txtNuestroEquipo p{border: double 5px bisque;padding: 1%;border-radius: 15px;}
-
-.txtNuestroEquipo {display: grid;
-grid-template-areas: 
-"h2 h2 h2"
-"parrafo1 parrafo2 parrafo3";
-grid-template-rows: auto auto auto;
-grid-template-columns: auto auto;
-grid-column-gap: 5px;
-grid-row-gap: 5px;}
-
-h2{grid-area: h2;}
-.parrafo1{grid-area: parrafo1;}
-.parrafo2{grid-area: parrafo2;}
-.parrafo3{grid-area: parrafo3;}
-
-.packProfesional1 {display: flex;flex-direction: column; text-align: center;background-color: black; color: bisque;margin: 2%;border-radius: 10px;}
-.packProfesional1 img{width: 100%;border-radius: 10px;}
-
-.packProfesional2 {display: flex;flex-direction: column; text-align: center; background-color: black; color: bisque;margin: 2%;border-radius: 10px;}
-.packProfesional2 img {width: 100%; height: 110%;border-radius: 10px;}
-
-.packProfesional3 {display: flex;flex-direction: column; text-align: center; background-color: black; color: bisque;margin: 2%;border-radius: 10px;}
-.packProfesional3 img {width: 100%; height: 100%;border-radius: 10px;}
-
-.packProfesional4 {display: flex;flex-direction: column; text-align: center; background-color: black; color: bisque;margin: 2%;border-radius: 10px;}
-.packProfesional4 img {width: 100%;border-radius: 10px;}
-
-.txtGuiaTallas {display: flex; flex-direction: column; text-align: center; font-size: 20px; justify-content: center;margin: 2%;border-radius: 10px;}
-.txtGuiaTallas h3 {text-align: center;font-size: 20px;border: double 3px bisque; padding:1%;
-	background-color: black;border-radius: 25px;color: bisque;margin-bottom: 1%; justify-self: stretch;}
-.txtGuiaTallas p {border: double 5px bisque;padding: 1%;border-radius: 15px;}
-
-.tablaTallas{display:flex; flex-direction:column;text-align: center;align-items: center;margin: 2%;}
-.tablaTallas table{width:100%; height:100%; font-size:15px;}
-
-.imgMapa{display: flex; flex-direction: column; text-align: center; background-color: black; color: bisque;margin: 2%;border-radius: 10px;}
-.imgMapa iframe{width: 100%; height: 100%;}
-
-/*---------------------------------------------------CSS>>TIENDA.HTML-----------------------------------------------------------------*/
-
-.tituloprincipal{display: flex;flex-direction: column;}
-.tarjetaProducto{display:flex; flex-direction: column;flex-wrap:wrap; text-align:center; font-size:px;justify-content: space-evenly; margin-bottom: 20px;}
-.tarjetaProducto img {display:flex; flex-direction:column; flex-wrap:wrap;}
-.tarjetaProducto button {border: double 5px bisque; width: 200px; height: 40px; background-color: black; border-radius: 15px;color: bisque;}
-.tarjetaProducto a {text-decoration: none; color: white;}
-
-/*----------------------------------------------------CSS>>BLOG.HTML------------------------------------------------------*/
-/*--------------CSS>> .IMGPRINCIPAL+TITULOS H1+H2------------------*/
-.imgPrincipalTitulo {display: flex;flex-direction: column;justify-content: center; margin-bottom: 15px;}
-.imgPrincipalTitulo {width:100%;}
-.tituloPrincipal{display:flex;flex-direction:column; align-items:center; align-self:center;text-align: center;
-	border:double 7px bisque; border-radius:40px; background-color: black; color: bisque;font-size: 30px;}
-.tituloPrincipal h2{color: bisque;	text-align: center;	font-size: 30px;}
-/*-----------------txtBlog1------------------------*/
-.txtBlog1{display: flex;flex-direction: column; text-align: center;font-size: 20px;align-items: center;margin: 5px;}
-.txtBlog1 button{display:flex;flex-direction:column; width:100px; height:30px; color:white; border:none;
-	 background-color:black; align-items:center;font-size: 15px;justify-content: center;border-radius: 5px; margin-top: 5px;}
-.txtBlog1 img{width: 100%; height: 70%;}
-.txtBlog1 a{text-decoration: none;}
-/*------------------txtBlog2-----------------------*/
-.txtBlog2 {display: flex;flex-direction: column; text-align: center;font-size: 20px;align-items: center;margin: 5px;}
-.txtBlog2 button {display:flex;flex-direction:column; width:100px; height:30px; color:white; border:none;
-	 background-color:black; align-items:center;font-size: 15px;justify-content: center;border-radius: 5px; margin: 5px;}
-.txtBlog2 img{width:100%;height: 70%;}
-.txtBlog2 a{text-decoration: none;}
-/*-------------------txtBlog3----------------------*/
-.txtBlog3 {display: flex;flex-direction: column; text-align: center;font-size: 20px;align-items: center;margin: 5px;}
-.txtBlog3 button {display:flex;flex-direction:column; width:100px; height:30px; color:white; border:none;
-	 background-color:black; align-items:center;font-size: 15px;justify-content: center;border-radius: 5px; margin-top: 5px;}
-.txtBlog3 img{display: flex; justify-content: center; width:100%;height:50%;}
-.txtBlog3 a{text-decoration: none;}
-/*-----------------txtBlog4-----------------------*/
-.txtBlog4 {display: flex;flex-direction: column; text-align: center;font-size: 20px;align-items: center; margin: 5px;}
-.txtBlog4 button {display:flex;flex-direction:column; width:100px; height:30px; color:white; border:none;
-	 background-color:black; align-items:center;font-size: 15px;justify-content: center;border-radius: 5px; margin-top: 5px;}
-.txtBlog4 img{width: 100%; height: 50%;}
-.txtBlog4 a{text-decoration: none;}
-/*------------------cajaFormulario---------------------*/
-.cajaFormulario{display: flex; flex-direction: column; width: auto; background-color: bisque; border: double 5px black; border-radius: 5px;padding:1%;}
-.cajaFormulario textarea{display:flex;flex-direction: column; width: 100%; margin-top: 5px; justify-content: center;}
-.cajaFormularioInput {display:flex;flex-direction:column; width:100px; height:30px; color:white; border:none;
-	 background-color:black; align-items:center;font-size: 15px;justify-content: center;border-radius: 5px; margin-bottom: 5px;margin-top: 5px;}
-/*-----------------------comentariosBlog----------------*/
-.comentariosBlog {display:flex; flex-direction:column ;text-align:left; font-size:15px; border: border-radius: 5%;margin-bottom: 10px;}
-.comentariosBlog h3 {font-size: 20px;}
-.comentariosBlog button {display:flex;  width:100px; height:30px; color:white; border:none;
-	 background-color:black; align-items:center;font-size: 10px;justify-content: center;border-radius: 5px; margin-top: 5px;}
-.comentariosBlog div{ border: double 4px black; border-radius: 10px;background-color: bisque; margin: .5%; width: 70%; padding:1%;}
-/*---------------------------IndiceArticulos------------*/
-.IndiceArticulos{display:flex; flex-direction:column; text-align:center; justify-self: center;}
-.IndiceArticulos li{list-style: none;}
-.IndiceArticulos h2{ border:double 5px bisque; color: bisque;text-align: center; justify-content:stretch; 
-	background-color:black; border-radius:10px; padding: .5%;}
-.IndiceArticulos{margin-top: 30px;}
-.IndiceArticulos a{text-decoration: none;color: black;text-align: center;padding-left:10px;font-size: 18px;}
-.IndiceArticulos a:hover{background-color: palevioletred;}
-/*--------------------RevistasReseñas------------------*/
-.RevistasReseñas{display:flex; flex-direction: column; text-align:center;justify-self:center;}
-.RevistasReseñas h2{border:double 5px bisque; color: bisque;text-align: center; width:100%; justify-items:center; 
-	background-color:black; border-radius:10px;padding: .5%;
-margin-bottom: 10px;}	
-.RevistasReseñas img{border: double 5px black;border-radius: 5px;}
-
-/*-------------------------------------------------------PRODUCTO.HTML------------------------------------------------------------*/
-.imgPrincipalTitulo{display: flex;width: 100%;}
-.tituloPrincipal {display: flex;flex-direction:column;align-items: center;align-self: center; margin-top: 20px;
-	border:double 7px bisque; border-radius:40px; background-color: black; color: bisque;font-size: 40px;}
-.tituloPrincipal h2{color: bisque;	text-align: center;	font-size: 30px;}
-/*------------------------------------------------------------------------------------------------------------------*/
-.cuadroGeneral{ display:flex;flex-direction:row; text-align: center; align-items: center;margin-bottom: 20px;}
-.imgGeneral img{width: 70%; height: 100%;}
-.cuadroSubtipoText{display:flex; flex-direction:column; text-align:center; align-content: space-evenly; 
-	align-items: center;justify-items: center;}
-/*------------------------------------------------------------------------------------------------------------------*/
-.tituloProducto {display: flex;flex-direction:column; font-size:30px; margin-top: 20px;}
-.pqDescripcion{dispplay: flex; flex-direction:column; font-size:20px ;}
-/*------------------------------------------------------------------------------------------------------------------*/
-.selectColor{display:flex; flex-direction:row; text-align:center; font-size: 15px; ; 
-	align-itmes: center;}
-.selectColor select{display: flex;flex-direction:row; width:100%; height:100%;
-	margin-right: 20px;margin-left: 20px; text-align: center;}
-/*------------------------------------------------------------------------------------------------------------------*/
-.agregar{display:flex; flex-directon:column; text-align:center;color:black;
-	border:solid 5px black; border-radius: 20px;width:70%; height:100%; background-color: transparent; justify-content: center;padding: .5%;}
-.agregar button{text-decoration: none; border: none; font-size: 15px;justify-content: center; align-content: center;
-	 background-color: transparent;}
-.agregar:hover{ background-color: bisque;}
-/*------------------------------------------------------------------------------------------------------------------*/
-.comprar{display:flex; flex-direction:column; text-align:center;color:white;border:none; background-color:black; padding: 2%;
-	justify-content: center;border-radius: 15px;width:70% ;height:100%}
-.comprar button{color: white; background-color:black; border:none; font-size:15px; align-content: center}
-/*------------------------------------------------------------------------------------------------------------------*/
-.suscribirAhorro {display:flex;font-size: 15px; flex-direction:row; text-align: center;
- 	align-items: center;}
-.suscribirAhorro input{ display: flex; flex-direction:row;width:5%; height: 5%; text-align: center;
-	justify-items: center;margin-right: 1%;}
-/*------------------------------------------------------------------------------------------------------------------*/
-.ticks {display:flex;flex-direction: column;text-align:left;align-items:flex-start;font-size:20px;}
-/*------------------------------------------------------------------------------------------------------------------*/
-.cuadroSubtipoTabla {display:flex; flex-direction:column;text-align: center;align-items: center; height: 70%; 
-	align-self: center;}
-.cuadroSubtipoTabla h2 {font-size:20px; margin-bottom: 20px;}
-.cuadroSubtipoTabla table {width:100%; height:50%; font-size:15px;}
-/*------------------------------------------------------------------------------------------------------------------*/
-.txtDetallesProducto {display:flex; flex-direction:column;font-size:20px;text-align: left; margin-top: 100px;
-	 margin-right: 80px;margin-bottom: 20px;}
-.txtDetallesProducto li {list-style-type: none;}
-/*------------------------------------------------------------------------------------------------------------------*/
-.comentariosProducto {display:flex; flex-direction:column ;text-align:center; font-size:15px; width:100%; height: 70%;}
-.comentariosProducto h2 {font-size: 20px;}
-.comentariosProducto div {margin-top: 5px;margin-bottom: 5px;border: solid 5px black;background-color: lightgreen;border-radius:15px; 
-	background-color:bisque; border:double 7px black; color:black; border-radius:15px;}
-/*------------------------------------------------------------------------------------------------------------------*/
-.packAhorro{display:flex;align-items:center; margin-bottom: 2%;}
-.packAhorro h3{display: flex; flex-direction: row; text-align:center; justify-content:center; font-size:20px;
-	background-color:black; border: double 5px bisque; color: white ; border-radius: 10px;}
-.packAhorro img{ width:70%; height: 70%;}
-.img1{display:flex; flex-direction:column; text-align:center; font-size: 20px;align-items: center; width: 89%;}
-.img2{display:flex; flex-direction:column; text-align:center; font-size: 20px;align-items: center; width: 100%}
-.img3{display:flex; flex-direction:column; text-align:center; font-size: 20px;align-items: center; width: 94%;}
-.descuento{display: flex; flex-direction: column;font-size: 20px; align-items: center;}
-
-.packAhorro button{display:flex;flex-direction:column; width:60%; height:100%; padding: 5%;color:black; border:solid 3px black;
- 	background-color:transparent; align-items:center;font-size: 15px;justify-content: center;border-radius: 10px;}
-.packAhorro strike{font-size: 40px;color: red;}
-.linearow{display:flex;flex-direction: column; text-align: center; align-items: flex-start; font-size: 15px;}
-.linearow img{width: 5%}
-.descuento button{display: flex; padding: 2%; background-color: greenyellow; color: white; width: 40%;
-	 height: 10%; margin-top: 1%; color: black; font-size: 1.5rem;}
-.descuento h3{display: flex; text-align: center; background-color:greenyellow; color: black; border: double 5px black; padding: 1%;}
-.tambien{display: flex; flex-direction: row; text-align: center;font-size: 30px;}
-.tambien h3{font-size: 20px; background-color: lightgreen;background-color:black; border: double 5px bisque; color: white ; border-radius: 10px}
-.tambien button{display:flex;flex-direction:column; width:200px; height:50px; color:white; border:none; 
-	background-color:black; align-items:center;font-size: 20px;justify-content: center;border-radius: 10px; margin-top: 5px;}
-
-/*---------------------------------------------CSS CONTACTO.HTML--------------------------------------------------------------------------*/
-
-.tituloPrincipal{display: flex; flex-direction: column; text-align: center; font-size: 30px; border: double 7px bisque;padding: 1%;margin: 2%;}
-
-.txtContacto{display: flex;flex-direction: column;text-align: center; font-size: 20px; margin: 2%;}
-
-.cajaFormulario{display: flex; flex-direction: column; text-align: center; align-items: center;margin-bottom: 2%;}
-.nombredad{display: flex; text-align: center; margin: 5px;}
-.nombredad input {margin-right: 5px;margin-left: 5px;}
-.emailTel{display: flex; text-align: center; margin: 10px;}
-.emailTel input{margin-right: 9px;margin-left:9px;}
-
-/*---------------------------GRID-INDEX--------------------------*/
-.gridIndex{
-	display: grid;
-	grid-template-areas: 
-	"txtEnviosGratis txtEnviosGratis txtEnviosGratis txtEnviosGratis"
-	"header header header header"
-	"imgPrincipalTitulo imgPrincipalTitulo imgPrincipalTitulo imgPrincipalTitulo"
-	". txtPrincipalTitulo txtPrincipalTitulo ."
-	". txtAbrigos imgAbrigos ."
-	". imgCamisas txtCamisas ."
-	". bannerGafas bannerGafas ."
-	". txtChaquetas imgChaquetas ."
-	". imgConocenos txtConocenos . "
-	"footer footer footer footer";
-	grid-template-rows: auto auto auto auto auto auto auto auto auto;
-	grid-template-columns:10% 40% 40% 10%;
-	background-color: none;
-	grid-row-gap: 0px;
-	grid-column-gap: 0px;}
-
-.border{border: solid 5px black}
-.txtEnviosGratis{grid-area:txtEnviosGratis;}
-header{grid-area:header;}
-.txtPrincipalTitulo{grid-area:txtPrincipalTitulo;}
-.imgPrincipalTitulo{grid-area:imgPrincipalTitulo;}
-.txtAbrigos{grid-area:txtAbrigos;}
-.imgAbrigos{grid-area: imgAbrigos;}
-.bannerGafas{grid-area: bannerGafas;}
-.txtCamisas{grid-area:txtCamisas;}
-.imgCamisas{grid-area: imgCamisas;}
-.txtChaquetas{grid-area: txtChaquetas;}
-.imgChaquetas{grid-area: imgChaquetas;}
-.imgConocenos{grid-area: imgConocenos;}
-.txtConocenos{grid-area: txtConocenos;}
-footer{grid-area: footer;}
-
-header{display: grid;
-grid-template-areas: 
-"logo myNav carrito--user";
-grid-template-columns: 15% 75% 10%;
-grid-template-rows: auto;}
-
-.logo{grid-area: logo;}
-.myNav{grid-area: myNav;}
-.carrito--user{grid-area: carrito--user;}
-
-/*--------------------------GRID-NOSOTROS----------------------------*/
-
-.gridNosotros{
-	display: grid;
-	grid-template-areas: 
-	"txtEnviosGratis txtEnviosGratis txtEnviosGratis txtEnviosGratis"
-	"header header header header"
-	"imgPrincipalTitulo imgPrincipalTitulo imgPrincipalTitulo imgPrincipalTitulo"
-	". txtPrincipalTitulo txtPrincipalTitulo ."
-	". imgLetreroVintage  txtLetreroVintage ."
-	". txtNuestraTienda imgNuestraTienda ."
-	". txtNuestroEquipo txtNuestroEquipo ."
-	". packProfesional1 packProfesional2 ." 
-	". packProfesional3 packProfesional4 ."
-	". tablaTallas  txtGuiaTallas ."
-	". imgMapa imgMapa ."
-	". . . ."
-	"footer footer footer footer";
-	grid-template-rows:auto auto auto auto auto auto auto auto auto auto auto 100px auto;
-	grid-template-columns:10% 40% 40% 10%;
-	grid-row-gap: 0px;
-	grid-column-gap: 0px;}
-
-.txtEnviosGratis {grid-area:txtEnviosGratis;}
-header {grid-area:header ;}
-.imgPrincipalTitulo{grid-area:imgPrincipalTitulo;}
-.txtPrincipalTitulo{grid-area: txtPrincipalTitulo;}
-.imgLetreroVintage {grid-area:imgLetreroVintage;}
-.txtLetreroVintage {grid-area:txtLetreroVintage ;}
-.imgNuestraTienda {grid-area:imgNuestraTienda ;}
-.txtNuestraTienda {grid-area:txtNuestraTienda ;}
-.txtNuestroEquipo {grid-area:txtNuestroEquipo ;}
-.packProfesional1 {grid-area:packProfesional1 ;}
-.packProfesional2 {grid-area:packProfesional2 ;}
-.packProfesional3 {grid-area:packProfesional3 ;}
-.packProfesional4 {grid-area:packProfesional4 ;}
-.imgMapa {grid-area:imgMapa;}
-.txtGuiaTallas {grid-area:txtGuiaTallas ;}
-.tablaTallas {grid-area:tablaTallas ;}
-footer {grid-area:footer;flex-direction: column;}
-
-/*-------------------------GRID TIENDA---------------------------------------*/
-.gridTienda{
-	display: grid;
-	grid-template-areas: 
-	"txtEnviosGratis txtEnviosGratis txtEnviosGratis txtEnviosGratis txtEnviosGratis"
-	"header header header header header"
-	". tituloPrincipal tituloPrincipal tituloPrincipal ."
-	". tarjetaProducto tarjetaProducto tarjetaProducto ."
-	"footer footer footer footer footer";
-	grid-template-rows: auto auto auto auto auto auto;
-	grid-template-columns:auto auto auto auto auto;
-	grid-row-gap: 0px;
-	grid-column-gap: 0px;}
-
-.txtEnviosGratis{grid-area:txtEnviosGratis;}
-header {grid-area:header;}
-.tarjetaProducto {grid-area: tarjetaProducto;}
-footer {grid-area:footer;}
-.tituloPrincipal{grid-area: tituloPrincipal;}
-.tarjetaProducto{display:grid;
-	grid-template-areas: 
-	"tarjetaProducto1 tarjetaProducto2 tarjetaProducto3 "
-	"tarjetaProducto4 tarjetaProducto5 tarjetaProducto6"
-	"tarjetaProducto7 tarjetaProducto8 tarjetaProducto9"
-	"tarjetaProducto10 tarjetaProducto11 tarjetaProducto12";
-	grid-template-rows: auto auto auto auto;
-	grid-template-columns: auto auto auto;
-	grid-row-gap: 0px;
-	grid-column-gap:0px;}
-
-.tarjetaProducto1{grid-area:tarjetaProducto1 ;}
-.tarjetaProducto2{grid-area:tarjetaProducto2 ;}
-.tarjetaProducto3{grid-area:tarjetaProducto3 ;}
-.tarjetaProducto4{grid-area:tarjetaProducto4 ;}
-.tarjetaProducto5{grid-area:tarjetaProducto5 ;}
-.tarjetaProducto6{grid-area:tarjetaProducto6 ;}
-.tarjetaProducto7{grid-area:tarjetaProducto7 ;}
-.tarjetaProducto8{grid-area:tarjetaProducto8 ;}
-.tarjetaProducto9{grid-area:tarjetaProducto9 ;}
-.tarjetaProducto10{grid-area:tarjetaProducto10 ;}
-.tarjetaProducto11{grid-area:tarjetaProducto11 ;}
-.tarjetaProducto12{grid-area:tarjetaProducto12 ;}
-
-/*-----------------------GRID BLOG-----------------------------------------------*/
-
-.gridBlog{display: grid;
-	grid-template-areas:
-	"txtEnviosGratis txtEnviosGratis txtEnviosGratis txtEnviosGratis"
-	"header header header header"
-	"imgPrincipalTitulo imgPrincipalTitulo imgPrincipalTitulo imgPrincipalTitulo"
-	". txtBlog1 txtBlog2 ."
-	". txtBlog3 txtBlog4 ."
-	". cajaFormulario  IndiceArticulos ."
-	". comentariosBlog IndiceArticulos ."
-	". comentariosBlog RevistasReseñas ."
-	". comentariosBlog RevistasReseñas ."
-	". comentariosBlog RevistasReseñas ."
-	". . . ."
-	"footer footer footer footer";
-	grid-template-rows: auto auto auto auto auto auto auto auto  auto auto auto auto;
-	grid-template-columns:5% 45% 45% 5% ;
-	grid-row-gap: 0px;
-	grid-column-gap: 5px;}
-
-.txtEnviosGratis{grid-area:txtEnviosGratis;}
-header {grid-area:header ;}
-.imgPrincipalTitulo{grid-area:imgPrincipalTitulo;}
-.txtBlog1{grid-area:txtBlog1 ;}
-.txtBlog2{grid-area:txtBlog2 ;}
-.txtBlog3{grid-area:txtBlog3 ;}
-.txtBlog4{grid-area:txtBlog4 ;}
-.cajaFormulario{grid-area:cajaFormulario ;}
-.comentariosBlog{grid-area:comentariosBlog;}
-.IndiceArticulos{grid-area:IndiceArticulos ;}
-.RevistasReseñas{grid-area:RevistasReseñas ;}
-footer{grid-area: footer;}
-
-/*---------------------------GRID PRODUCTOS-----------------------------------------*/
-
-.gridProduct{display: grid;
-	grid-template-areas: 
-	"txtEnviosGratis txtEnviosGratis txtEnviosGratis txtEnviosGratis txtEnviosGratis"
-	"header header header header header"
-	"tituloPrincipal tituloPrincipal tituloPrincipal tituloPrincipal tituloPrincipal"
-	". . cuadroGeneral cuadroSubtipoText . "
-	". . txtDetallesProducto cuadroSubtipoTabla . "
-	". . txtDetallesProducto cuadroSubtipoTabla . "
-	". . packAhorro comentariosProducto . "
-	". . packAhorro comentariosProducto . "
-	". . tambien tambien . "
-	". . . . . "
-	"footer footer footer footer footer";
-	grid-template-rows: auto auto auto auto auto auto auto auto auto 100px auto;
-	grid-template-columns: 5% 5% 50% 30% auto;
-	grid-row-gap: 0;
-	grid-column-gap:0;}
-
-.txtEnviosGratis{grid-area:txtEnviosGratis;}
-header {grid-area:header ;}
-.tituloPrincipal{grid-area: tituloPrincipal;}
-.cuadroGeneral{grid-area: cuadroGeneral;}
-.cuadroSubtipoText{grid-area: cuadroSubtipoText;}
-.cuadroSubtipoTabla{grid-area: cuadroSubtipoTabla;}
-.txtDetallesProducto{grid-area: txtDetallesProducto;}
-.comentariosProducto{grid-area: comentariosProducto;}
-.packAhorro{grid-area: packAhorro;}
-.tambien{grid-area: tambien;}
-footer {grid-area: footer;}
-
-.cuadroGeneral{display: grid;
-	grid-template-areas:
-	"subImg1 imgGeneral"
-	"subImg2 imgGeneral"
-	"subImg3 imgGeneral";
-	grid-template-rows: auto auto auto;
-	grid-template-columns: auto auto ;
-	grid-row-gap: 0px;
-	grid-column-gap: 0px;}
-.imgGeneral{grid-area: imgGeneral;}
-.subImg1{grid-area: subImg1;}
-.subImg2{grid-area: subImg2;}
-.subImg3{grid-area: subImg3;}
-
-.cuadroSubtipoText{display: grid;
-	grid-template-areas: 
-	"tituloProducto"
-	"pqDescripcion"
-	"selectColor"
-	"agregar"
-	"comprar"
-	"suscribirAhorro"
-	"ticks";
-	grid-template-columns:auto ;
-	grid-template-rows: auto auto auto auto auto auto auto auto;
-	grid-row-gap: 0px;
-	grid-column-gap: 0px;}
-
-.tituloProducto {grid-area: tituloProducto;}
-.pqDescripcion{grid-area: pqDescripcion;}
-.selectColor{grid-area: selectColor;}
-.agregar{grid-area:agregar;}
-.comprar{grid-area:comprar;}
-.suscribirAhorro{grid-area:suscribirAhorro;}
-.ticks{grid-area: ticks;}
-
-.packAhorro {display: grid;
-	grid-template-areas: 
-	"h3 h3 h3"
-	"img1 img2 img3"
-	"descuento descuento descuento";
-	grid-template-rows: auto auto auto;
-	grid-template-columns: auto auto auto;}
-h3{grid-area: h3;}
-.img1{grid-area: img1;}
-.img2{grid-area: img2;}
-.img3{grid-area: img3;}
-.descuento{grid-area: descuento;}
-
-.tambien{display: grid;
-grid-template-areas: 
-"h3 h3 h3"
-"img1 img2 img3";
-grid-template-rows: auto auto auto;
-grid-template-columns: auto auto;}
-
-/*----------------------GRID CONTACTO----------------------------------------------------*/
-
-.gridContacto{display: grid;
-grid-template-areas: 
-"txtEnviosGratis txtEnviosGratis txtEnviosGratis"
-"header header header"
-". tituloPrincipal ."
-". txtContacto ."
-". cajaFormulario ."
-"footer footer footer";
-grid-template-rows: auto auto auto auto auto auto;
-grid-template-columns: 10% 80% 10%;
-grid-row-gap: 0px;
-grid-column-gap: 0px;}
-
-.txtEnviosGratis{grid-area: txtEnviosGratis;}
-header{grid-area: header;}
-.tituloPrincipal{grid-area: tituloPrincipal;}
-.txtContacto{grid-area: txtContacto;}
-.cajaFormulario{grid-area: cajaFormulario;}
-footer{grid-area: footer;}
-
-/*------------------------MEDIAQUERIE-NOSOTROS.HTML---------------------------*/
-
-@media(max-width:769px){
-	.gridNosotros{
-		grid-template-areas: 
-		"header"
-		"imgLetreroVintage"
-		"txtLetreroVintage"
-		"imgNuestraTienda"
-		"txtNuestraTienda"
-		"txtNuestroEquipo"
-		"packProfesional1"
-		"packProfesional2"
-		"packProfesional3"
-		"packProfesional4"
-		"imgMapa"
-		"footer";
-		grid-template-columns: 100%;
- 		grid-template-rows: repeat(12, auto);
- 		grid-row-gap: 5px;}
-.imgPrincipalTitulo{display: none;}
-.txtGuiaTallas{display: none}
-.tablaTallas{display: none;}
-.txtNuestroEquipo{display: flex; flex-direction: row; flex-wrap: wrap;}
-/*--------------------------MEDIAQUIERE-INDEX.HTML------------------------*/
-@media (max-width: 769px){
- .gridIndex{
- 	grid-template-areas: 
- 	"header"
- 	"imgCamisas"
- 	"txtCamisas"
- 	"bannerGafas"
- 	"imgChaquetas"
- 	"txtChaquetas"
- 	"imgAbrigos"
- 	"txtAbrigos"
- 	"txtConocenos"
- 	"footer";
- 	grid-template-columns: 100%;
- 	grid-template-rows: repeat(9, auto);
- 	grid-row-gap: 5px;}
- 	.imgConocenos{display: none;}
- 	.txtEnviosGratis{display: none;}
-	.txtPrincipalTitulo{display: none;}
-	.myNav ul{display:flex;flex-direction:row;flex-wrap: wrap;justify-content: center;}
-	.imgPrincipalTitulo{display: none}
-	.logo{display:none;}
-.carrito--user{display:flex;}
-footer{display: flex;flex-direction: column;height: 100%;}
-header ul {display:flex;flex-direction: column;text-align: center;}
-
-.metodoPago{display: none;}
-.imgChaquetas {border: none;}
-.txtChaquetas {border: none}
-.txtCamisas {border: none;}
-/*----------------MEDIAQUERIE TIENDA.HTML--------------------------------*/
-
-@media (max-width 769px){
-	.gridTienda{
-		grid-template-areas: 
-		"header"
-		"tarjetaProducto"
-		"footer";
-		grid-template-columns: 100%;
-		grid-template-rows: repeat(3, auto);
-		grid-row-gap: 5px;}
-	}
-header{display: flex; flex-direction: column;}
-.tarjetaProducto{display:flex; flex-direction: column;text-align: center;align-items: center;margin-top: 20px;}
-.tituloPrincipal{display: none;}
-
-/*----------------MEDIAQUERIE BLOG.HTML-----------------------------------*/
-
-@media (max-width: 769px){
-	.gridBlog{
-		grid-template-areas: 
-		"header"
-		"txtBlog1"
-		"txtBlog2"
-		"txtBlog3"
-		"txtBlog4"
-		"cajaFormulario"
-		"comentariosBlog"
-		"IndiceArticulos"
-		"RevistasReseñas"
-		"footer";
-		grid-template-columns: 100%;
-		grid-template-rows: repeat(10, auto);
-		grid-row-gap: 5px;}
-		.tituloprincipal{display: none;}
-		.IndiceArticulos h3{ justify-items: center; }
-		.comentariosBlog{display: flex;align-items: center; justify-content: center;}
-		.quicklinks{display: flex; flex-direction: column;}
-		.carrito--user{display: flex; flex-direction: row; margin-top: 30px;}
-		.myNav{padding: 0px;justify-content: center; align-items: ;text-align: center;}
-		.myNav ul{ display: flex;flex-direction: row;grid-gap: 5px;align-content:center;font-size: 20px;padding-top: 30px; text-align: center;}
-		.myNav li {display:flex; flex-direction:column; border:double 3px bisque;background-color: pink; width: 50%; height:15%; justify-content: center;align-content: center; align-items: center; border-radius: 4px;background-color: black;}
-		header{ height: 300px; }
-
-/*---------------------MEDIAQUERIE PRODUCT.HTML---------------------------------*/
-
-@media (max-width: 769px){
-	.gridProduct{
-		grid-template-areas: 
-		"header"
-		"cuadroGeneral"
-		"cuadroSubtipoText"
-		"txtDetallesProducto"
-		"tambien"
-		"footer";
-		grid-template-columns: 100%;
-		grid-template-rows: repeat(5,auto);
-		grid-row-gap: 5px;}
-		.subImg1{display: none;}
-		.subImg2{display: none;}
-		.subImg3{display: none;}
-		.comentariosProducto{display: none;}
-		.packAhorro{display: none;}
-		.comentariosProducto{display: none;}
-		.cuadroSubtipoTabla{display: none;}
-		.tambien{display:flex; flex-direction: column;align-items: center;margin-bottom: 20px;}
-		.tituloProducto{font-size: 20px;}
-		.comprar{margin: 5px;padding: 5%}
-		.agregar{margin:15px; padding: 3%;}
-		.cuadroSubtipoText{display: flex; flex-direction: column;margin: 10px; font-size: 15px;align-items: center;}
-		.selectColor{margin-top: 10px;margin-bottom: 10px;}	
-		.txtDetallesProducto {display: flex;flex-direction: column;font-size:15px;margin: 40px;text-align: center;}
-		
-/*------------------------MEDIAQUERIE CONTACTO.HTML------------------------------------*/
-@media(max-width: 769px){
-	.gridContacto{ 
-	grid-template-areas: 
-	"header"
-	"cajaFormulario"
-	"footer";
-	grid-template-columns: 100%;
-	grid-template-rows: repeat(2,auto);
-	}
-
-.txtContacto{display: none;}
-/*-------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* {
+  padding: 0;
+  margin: 0; }
+
+.gridIndex {
+  display: grid;
+  grid-template-areas: "txtEnviosGratis txtEnviosGratis txtEnviosGratis txtEnviosGratis" "header header header header" "imgPrincipalTitulo imgPrincipalTitulo imgPrincipalTitulo imgPrincipalTitulo" ". txtPrincipalTitulo txtPrincipalTitulo ." ". txtAbrigos imgAbrigos ." ". imgCamisas txtCamisas ." "bannerGafas  bannerGafas bannerGafas bannerGafas " ". txtChaquetas imgChaquetas ." ". imgConocenos txtConocenos ." "footer footer footer footer";
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  grid-template-columns: 10% 40% 40% 10%; }
+  .gridIndex .txtEnviosGratis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px; }
+  .gridIndex header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: "logo myNav carrito--user";
+    grid-template-columns: 15% 75% 10%;
+    grid-template-rows: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffa500;
+    padding: 10px; }
+    .gridIndex header .logo {
+      grid-area: logo;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .gridIndex header .logo img {
+        width: 80%; }
+    .gridIndex header .carrito--user {
+      grid-area: carrito--user;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .gridIndex header .carrito--user img {
+        width: 20%;
+        justify-content: center; }
+    .gridIndex header .myNav {
+      grid-area: myNav;
+      text-align: center; }
+      .gridIndex header .myNav ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        column-gap: 30px;
+        justify-content: center; }
+        .gridIndex header .myNav ul a {
+          text-decoration: none;
+          list-style-type: none;
+          color: #000000; }
+          .gridIndex header .myNav ul a:hover {
+            border-bottom: solid 1px white;
+            color: #ffffff; }
+  .gridIndex .txtEnviosGratis {
+    grid-area: txtEnviosGratis; }
+  .gridIndex .txtPrincipalTitulo {
+    grid-area: txtPrincipalTitulo;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 20px; }
+  .gridIndex .imgPrincipalTitulo {
+    grid-area: imgPrincipalTitulo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 100%; }
+    .gridIndex .imgPrincipalTitulo img {
+      width: 100%; }
+    .gridIndex .imgPrincipalTitulo h1 {
+      text-align: center;
+      margin-top: 10px; }
+  .gridIndex .txtAbrigos {
+    grid-area: txtAbrigos;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center; }
+  .gridIndex .imgAbrigos {
+    grid-area: imgAbrigos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; }
+    .gridIndex .imgAbrigos img {
+      width: 90%; }
+    .gridIndex .imgAbrigos button {
+      width: 120px;
+      height: 40px;
+      text-align: center;
+      margin-top: 10px;
+      background-color: #000000;
+      border-radius: 5px; }
+      .gridIndex .imgAbrigos button a {
+        text-decoration: none;
+        color: #ffffff; }
+  .gridIndex .bannerGafas {
+    grid-area: bannerGafas;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .gridIndex .bannerGafas img {
+      width: 100%; }
+    .gridIndex .bannerGafas h2 {
+      text-align: center;
+      margin-top: 20px; }
+    .gridIndex .bannerGafas p {
+      text-align: center; }
+  .gridIndex .txtCamisas {
+    grid-area: txtCamisas;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    margin-left: 100px; }
+  .gridIndex .imgCamisas {
+    grid-area: imgCamisas;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    align-self: center;
+    text-align: center; }
+    .gridIndex .imgCamisas img {
+      width: 100%; }
+    .gridIndex .imgCamisas button {
+      width: 120px;
+      height: 40px;
+      text-align: center;
+      margin-top: 10px;
+      background-color: #000000;
+      border-radius: 5px; }
+      .gridIndex .imgCamisas button a {
+        text-decoration: none;
+        color: #ffffff; }
+  .gridIndex .txtChaquetas {
+    grid-area: txtChaquetas;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center; }
+  .gridIndex .imgChaquetas {
+    grid-area: imgChaquetas;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 20px; }
+    .gridIndex .imgChaquetas img {
+      width: 100%; }
+    .gridIndex .imgChaquetas h3 {
+      text-align: center; }
+    .gridIndex .imgChaquetas button {
+      width: 120px;
+      height: 40px;
+      text-align: center;
+      margin-top: 10px;
+      background-color: #000000;
+      border-radius: 5px; }
+      .gridIndex .imgChaquetas button a {
+        text-decoration: none;
+        color: #ffffff; }
+  .gridIndex .imgConocenos {
+    grid-area: imgConocenos; }
+    .gridIndex .imgConocenos img {
+      width: 100%; }
+  .gridIndex .txtConocenos {
+    grid-area: txtConocenos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin-left: 20px; }
+    .gridIndex .txtConocenos button {
+      width: 120px;
+      height: 40px;
+      text-align: center;
+      margin-top: 10px;
+      background-color: #000000;
+      border-radius: 5px; }
+      .gridIndex .txtConocenos button a {
+        text-decoration: none;
+        color: #ffffff; }
+  .gridIndex footer {
+    grid-area: footer;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-areas: "quicklinks suscribete sigueme logo" "quicklinks  faq metodoPago logo";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 15% 25% 25% 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    background-color: #ffa500; }
+    .gridIndex footer .quicklinks {
+      grid-area: quicklinks;
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      .gridIndex footer .quicklinks ul li a {
+        text-decoration: none;
+        color: #000000; }
+    .gridIndex footer .faq {
+      grid-area: faq;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .gridIndex footer .faq a {
+        text-decoration: none;
+        color: #000000; }
+    .gridIndex footer .logo {
+      grid-area: logo;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .gridIndex footer .logo img {
+        width: 70%; }
+    .gridIndex footer .suscribete {
+      grid-area: suscribete;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .gridIndex footer .suscribete form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+      .gridIndex footer .suscribete #inputemail {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        padding: 1%;
+        border-radius: 5px; }
+      .gridIndex footer .suscribete #inputbutton {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        padding: 1%;
+        justify-content: center;
+        margin-left: 10px;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 5px; }
+      .gridIndex footer .suscribete img {
+        width: 10%;
+        align-content: center;
+        margin-right: 10px; }
+      .gridIndex footer .suscribete form {
+        justify-items: center; }
+    .gridIndex footer .sigueme {
+      grid-area: sigueme;
+      text-align: center; }
+      .gridIndex footer .sigueme img {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px; }
+    .gridIndex footer .metodoPago {
+      grid-area: metodoPago;
+      text-align: center; }
+      .gridIndex footer .metodoPago img {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px; }

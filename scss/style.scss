@@ -1,0 +1,130 @@
+@import "colores";
+* {padding: 0; margin: 0;}
+    .gridIndex{
+        display:grid;
+            grid-template-areas: 
+                "txtEnviosGratis txtEnviosGratis txtEnviosGratis txtEnviosGratis"
+                "header header header header"
+                "imgPrincipalTitulo imgPrincipalTitulo imgPrincipalTitulo imgPrincipalTitulo"
+                ". txtPrincipalTitulo txtPrincipalTitulo ."
+                ". txtAbrigos imgAbrigos ."
+                ". imgCamisas txtCamisas ."
+                "bannerGafas  bannerGafas bannerGafas bannerGafas "
+                ". txtChaquetas imgChaquetas ."
+                ". imgConocenos txtConocenos ."
+                "footer footer footer footer";
+            grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+            grid-template-columns:10% 40% 40% 10%;
+        .txtEnviosGratis{display: flex; flex-direction: row;justify-content: center;background-color: $bgBlack;color: $colorTxt;padding:5px;}   
+        header{ grid-area:header;
+                display: grid;
+                grid-template-areas: 
+                "logo myNav carrito--user";
+                grid-template-columns: 15% 75% 10%;
+                grid-template-rows: auto;
+                flex-direction: row; justify-content:space-evenly;align-items:center;
+                background-color:$bgHeader;padding:10px;
+                    .logo{grid-area:logo;display:flex;flex-direction:row;justify-content: center;
+                        img{width: 80%;}
+                    }
+                    .carrito--user{ grid-area:carrito--user;display:flex;flex-direction:row; justify-content: center;
+                        img{width:20%;justify-content: center;}   
+                    }
+                    .myNav{grid-area:myNav;text-align: center;
+                        ul{display: flex;flex-direction: row;list-style-type:none;column-gap: 30px;justify-content:center;
+                            a{text-decoration: none;list-style-type: none;color:$colorTxtN;
+                                &:hover{border-bottom: solid 1px white;color: $colorTxt;}
+                            }
+                        } 
+                    }  
+                }
+                
+        .txtEnviosGratis{grid-area:txtEnviosGratis;}
+        .txtPrincipalTitulo{grid-area:txtPrincipalTitulo;display:flex;flex-direction:row;text-align:center;margin-bottom: 20px;}
+        .imgPrincipalTitulo{grid-area:imgPrincipalTitulo;display: flex;flex-direction: column;justify-content: center; margin-bottom: 15px;width:100%;
+            img{width: 100%;}
+            h1{text-align: center; margin-top: 10px;}
+        }
+        .txtAbrigos{grid-area:txtAbrigos;display: flex;flex-direction: column;align-self: center;text-align: center;}
+        .imgAbrigos{grid-area: imgAbrigos;display: flex;flex-direction:column;
+            align-items:center;text-align: center;margin-top:20px;
+                img{width: 90%;}
+                button{width: 120px; height: 40px;text-align:center; margin-top: 10px;background-color:$bgBlack;border-radius:5px;
+                    a{text-decoration:none;color: $colorTxt;}
+                 }
+        }
+        .bannerGafas{grid-area: bannerGafas;display:flex;flex-direction:column;align-content:center;
+            img{width:100%;}
+            h2{text-align: center;margin-top: 20px;}
+            p{text-align: center;}
+        }
+        .txtCamisas{grid-area:txtCamisas;display: flex;flex-direction: column;align-self: center;text-align: center;margin-left: 100px;}
+        .imgCamisas{grid-area: imgCamisas;display: flex;flex-direction:column; margin-bottom: 20px;
+            align-items:center;align-self:center;text-align: center;
+            img{width: 100%;}
+            button{width: 120px; height: 40px;text-align: center;margin-top: 10px;background-color: $bgBlack;border-radius:5px;
+                a{text-decoration:none;color:$colorTxt;}
+            }
+        }
+        .txtChaquetas{grid-area: txtChaquetas;display: flex;flex-direction: column;align-self: center;text-align: center;}
+        .imgChaquetas{grid-area: imgChaquetas;display: flex;flex-direction:column;margin-bottom: 20px;
+            align-items:center;align-self:center;text-align: center; margin-top: 20px;
+            img{width: 100%;}
+            h3{text-align: center;}
+            button{width: 120px; height:40px; text-align:center; margin-top: 10px;background-color: $bgBlack;border-radius:5px;
+                a{text-decoration:none; color:$colorTxt;}
+            }
+        }
+        .imgConocenos{grid-area: imgConocenos;
+            img{width: 100%;}
+        }
+        .txtConocenos{grid-area: txtConocenos;display: flex;flex-direction:column;
+            align-items:center;align-self:center;text-align: center; margin-left: 20px;
+            button{width: 120px; height: 40px;text-align:center;margin-top: 10px;background-color: $bgBlack;border-radius:5px;
+                a{text-decoration: none;color: $colorTxt;}
+            }
+        } 
+        
+        footer{grid-area: footer; justify-content: space-between;margin-top: 40px;padding-top: 20px;
+            display: grid;
+                grid-template-areas: 
+                "quicklinks suscribete sigueme logo"
+                "quicklinks  faq metodoPago logo";
+                grid-template-rows: auto auto auto auto;
+                grid-template-columns: 15% 25% 25% 15%;
+                grid-row-gap: 10px;
+                grid-column-gap:10px;
+                background-color: $bgFooter;
+
+            .quicklinks{grid-area: quicklinks;display:flex; flex-direction:column;text-align:center;
+                ul{
+                    li{ 
+                        a{text-decoration: none;color: $colorTxtN;}
+                    }
+                }
+            }
+            .faq{grid-area: faq;display:flex; flex-direction:row;justify-content:center;
+                a{text-decoration:none;color:$colorTxtN;}
+            }
+            .logo{grid-area: logo;display:flex;flex-direction:column;justify-content:center;
+                img{width: 70%;}
+                }
+            .suscribete{grid-area: suscribete;display:flex;flex-direction:column; align-items:center;
+                form{display:flex;flex-direction:row;justify-content: center; align-items: center;}
+                #inputemail{display: flex;flex-direction:row; width:80%; padding: 1%;border-radius: 5px;}
+                #inputbutton{ display: flex;flex-direction:row; width:30%; padding: 1%;
+                justify-content: center;margin-left: 10px;background-color: $bgBlack; color: $colorTxt;border-radius: 5px;}
+                    img{width:10%;align-content: center;margin-right: 10px;}
+                    form{justify-items: center;}
+                }
+            .sigueme{grid-area: sigueme; text-align:center;
+                
+                img{width:30px; height:30px; margin-top: 10px;}
+            }
+            .metodoPago{grid-area: metodoPago;text-align:center;
+                img{width:30px; height:30px;margin-top:10px;}
+            }
+            
+        }
+    }
+
