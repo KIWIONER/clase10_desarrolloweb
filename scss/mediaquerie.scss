@@ -1,0 +1,45 @@
+@media(max-width:769px){
+    .gridIndex{
+        grid-template-areas:
+        "header header header"
+        ". imgCamisas ."
+        ". txtCamisas. "
+        ". bannerGafas ."
+        ". imgChaquetas ."
+        ". txtChaquetas ."
+        ". imgAbrigos ."
+        ". txtAbrigos ."
+        ". txtConocenos ."
+        "footer footer footer ";
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: repeat(10, auto);
+        grid-row-gap: 10px;
+        
+            
+            .imgConocenos{display: none;}
+            .txtEnviosGratis{display: none;}
+            .txtPrincipalTitulo{display: none;}
+            .imgPrincipalTitulo{display: none;}
+            .myNav{
+                ul{display:flex;flex-direction:column; flex-wrap:wrap; justify-content:center;}
+            }
+            .imgPrincipalTitulo{display: none;}
+            .logo{
+                img{display:none;}
+            }
+            .carrito--user{display:flex;}
+            footer{display: flex;flex-direction:column;height: 100%;}
+                .logo{width: 100%;text-align: center;}
+                div{
+                    form{margin: 1rem;}
+                }
+            header {
+                .myNav{
+                    ul{display:flex; flex-direction: column; flex-wrap: wrap;
+                    }
+                }
+            }
+            .metodoPago{display:none;}
+            .txtEnviosGratis{display:none;}
+        }
+    }

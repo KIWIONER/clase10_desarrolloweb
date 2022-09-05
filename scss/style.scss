@@ -1,6 +1,7 @@
 @import "colores";
+@import "font-size";
 * {padding: 0; margin: 0;}
-    .gridIndex{
+.gridIndex{
         display:grid;
             grid-template-areas: 
                 "txtEnviosGratis txtEnviosGratis txtEnviosGratis txtEnviosGratis"
@@ -28,11 +29,11 @@
                         img{width: 80%;}
                     }
                     .carrito--user{ grid-area:carrito--user;display:flex;flex-direction:row; justify-content: center;
-                        img{width:20%;justify-content: center;}   
+                        img{height: 1.5rem;justify-content: center;}   
                     }
-                    .myNav{grid-area:myNav;text-align: center;
+                    .myNav{grid-area:myNav;text-align: center;flex-wrap:wrap;
                         ul{display: flex;flex-direction: row;list-style-type:none;column-gap: 30px;justify-content:center;
-                            a{text-decoration: none;list-style-type: none;color:$colorTxtN;
+                            a{text-decoration: none;list-style-type: none;color:$colorTxtN;font-size:$a;
                                 &:hover{border-bottom: solid 1px white;color: $colorTxt;}
                             }
                         } 
@@ -40,14 +41,22 @@
                 }
                 
         .txtEnviosGratis{grid-area:txtEnviosGratis;}
-        .txtPrincipalTitulo{grid-area:txtPrincipalTitulo;display:flex;flex-direction:row;text-align:center;margin-bottom: 20px;}
+        .txtPrincipalTitulo{grid-area:txtPrincipalTitulo;display:flex;flex-direction:row;text-align:center;margin-bottom: 20px;
+            h2{font-size: $h2;}
+            p{font-size: $p;}
+        }
+
         .imgPrincipalTitulo{grid-area:imgPrincipalTitulo;display: flex;flex-direction: column;justify-content: center; margin-bottom: 15px;width:100%;
             img{width: 100%;}
-            h1{text-align: center; margin-top: 10px;}
+            h1{text-align: center; margin-top: 10px;font-size:$h1;}
         }
-        .txtAbrigos{grid-area:txtAbrigos;display: flex;flex-direction: column;align-self: center;text-align: center;}
+        .txtAbrigos{grid-area:txtAbrigos;display: flex;flex-direction: column;align-self: center;text-align: center;
+            h2{font-size: $h2;}
+            p{font-size: $p;}
+        }
         .imgAbrigos{grid-area: imgAbrigos;display: flex;flex-direction:column;
             align-items:center;text-align: center;margin-top:20px;
+                h3{font-size: $h3;}
                 img{width: 90%;}
                 button{width: 120px; height: 40px;text-align:center; margin-top: 10px;background-color:$bgBlack;border-radius:5px;
                     a{text-decoration:none;color: $colorTxt;}
@@ -55,24 +64,31 @@
         }
         .bannerGafas{grid-area: bannerGafas;display:flex;flex-direction:column;align-content:center;
             img{width:100%;}
-            h2{text-align: center;margin-top: 20px;}
-            p{text-align: center;}
+            h2{text-align: center;margin-top: 20px;font-size: $h2;}
+            p{text-align: center;font-size: $p;}
         }
-        .txtCamisas{grid-area:txtCamisas;display: flex;flex-direction: column;align-self: center;text-align: center;margin-left: 100px;}
+        .txtCamisas{grid-area:txtCamisas;display: flex;flex-direction: column;align-self: center;text-align: center;margin-left: 20px;
+            h2{font-size: $h2;}  
+            p{font-size: $p;}  
+        }
         .imgCamisas{grid-area: imgCamisas;display: flex;flex-direction:column; margin-bottom: 20px;
-            align-items:center;align-self:center;text-align: center;
+                align-items:center;align-self:center;text-align: center;
+            h3{font-size: $h3;}
             img{width: 100%;}
             button{width: 120px; height: 40px;text-align: center;margin-top: 10px;background-color: $bgBlack;border-radius:5px;
-                a{text-decoration:none;color:$colorTxt;}
+                    a{text-decoration:none;color:$colorTxt;}
             }
         }
-        .txtChaquetas{grid-area: txtChaquetas;display: flex;flex-direction: column;align-self: center;text-align: center;}
+        .txtChaquetas{grid-area: txtChaquetas;display: flex;flex-direction: column;align-self: center;text-align: center;
+            h2{font-size: $h2;}
+            p{font-size: $p;}    
+        }
         .imgChaquetas{grid-area: imgChaquetas;display: flex;flex-direction:column;margin-bottom: 20px;
             align-items:center;align-self:center;text-align: center; margin-top: 20px;
             img{width: 100%;}
-            h3{text-align: center;}
+            h3{text-align: center;font-size: $h3;}
             button{width: 120px; height:40px; text-align:center; margin-top: 10px;background-color: $bgBlack;border-radius:5px;
-                a{text-decoration:none; color:$colorTxt;}
+                a{text-decoration:none; color:$colorTxt;font-size: $a;}
             }
         }
         .imgConocenos{grid-area: imgConocenos;
@@ -80,8 +96,10 @@
         }
         .txtConocenos{grid-area: txtConocenos;display: flex;flex-direction:column;
             align-items:center;align-self:center;text-align: center; margin-left: 20px;
-            button{width: 120px; height: 40px;text-align:center;margin-top: 10px;background-color: $bgBlack;border-radius:5px;
-                a{text-decoration: none;color: $colorTxt;}
+                h2{font-size: $h2;}
+                p{font-size: $p;}
+                button{width: 120px; height: 40px;text-align:center;margin-top: 10px;background-color: $bgBlack;border-radius:5px;
+                a{text-decoration: none;color: $colorTxt;font-size: $a;}
             }
         } 
         
@@ -97,14 +115,15 @@
                 background-color: $bgFooter;
 
             .quicklinks{grid-area: quicklinks;display:flex; flex-direction:column;text-align:center;
+                h3{font-size: $h3;}
                 ul{
                     li{ 
-                        a{text-decoration: none;color: $colorTxtN;}
+                        a{text-decoration: none;color: $colorTxtN;font-size: $a;}
                     }
                 }
             }
             .faq{grid-area: faq;display:flex; flex-direction:row;justify-content:center;
-                a{text-decoration:none;color:$colorTxtN;}
+                a{text-decoration:none;color:$colorTxtN;font-size: $h3;}
             }
             .logo{grid-area: logo;display:flex;flex-direction:column;justify-content:center;
                 img{width: 70%;}
@@ -112,7 +131,7 @@
             .suscribete{grid-area: suscribete;display:flex;flex-direction:column; align-items:center;
                 form{display:flex;flex-direction:row;justify-content: center; align-items: center;}
                 #inputemail{display: flex;flex-direction:row; width:80%; padding: 1%;border-radius: 5px;}
-                #inputbutton{ display: flex;flex-direction:row; width:30%; padding: 1%;
+                #inputbutton{ display: flex;flex-direction:row; width:150px; height:35px; padding: 1%;
                 justify-content: center;margin-left: 10px;background-color: $bgBlack; color: $colorTxt;border-radius: 5px;}
                     img{width:10%;align-content: center;margin-right: 10px;}
                     form{justify-items: center;}
@@ -123,8 +142,8 @@
             }
             .metodoPago{grid-area: metodoPago;text-align:center;
                 img{width:30px; height:30px;margin-top:10px;}
-            }
-            
+            }       
         }
     }
+@import "mediaquerie";
 
